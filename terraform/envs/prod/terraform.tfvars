@@ -3,12 +3,14 @@ group_names = {
   "Developers" = "Groupe des développeurs"
   "DevOps"     = "Groupe des DevOps"
   "Admins"     = "Groupe des administrateurs"
+  "Interns"     = "Groupe des stagiaires"
 }
 
 # 🔹 Utilisateurs IAM et leurs groupes associés en `prod`
 users = {
   "client.admin"    = "Admins"
   "client.support"  = "Support"
+  "client.intern"  = "Interns"
 }
 
 # 🔹 Permissions IAM en `prod` (Accès total pour `Admins`, mais accès contrôlé pour `Developers` et `DevOps`)
