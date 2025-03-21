@@ -11,6 +11,7 @@ users = {
   "client.admin"    = "Admins"
   "client.support"  = "Support"
   "client.intern"  = "Interns"
+  "client.intern2"  = "Interns"
 }
 
 # 🔹 Permissions IAM en `prod` (Accès total pour `Admins`, mais accès contrôlé pour `Developers` et `DevOps`)
