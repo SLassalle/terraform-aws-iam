@@ -3,6 +3,7 @@ group_names = {
   "Developers" = "Groupe des développeurs"
   "DevOps"     = "Groupe des DevOps"
   "Admins"     = "Groupe des administrateurs"
+  "Support"     = "Groupe du support"
   "Interns"     = "Groupe des stagiaires"
 }
 
