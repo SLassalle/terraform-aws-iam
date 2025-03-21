@@ -1,0 +1,35 @@
+name: Terraform Prod Apply
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'terraform/**'
+      - 'envs/prod/**'
+  workflow_dispatch:
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    defaults:
+      run:
+        working-directory: terraform
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.1.7
+
+      - name: Terraform Init
+        run: terraform init -backend-config=backend-prod.config -reconfigure
+
+      - name: Terraform Apply
+        run: terraform apply -var-file=envs/prod/terraform.tfvars -auto-approve
