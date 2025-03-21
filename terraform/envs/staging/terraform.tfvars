@@ -9,7 +9,6 @@ group_names = {
 users = {
   "Bob.Dylan" = "DevOps"
   "Elon.Musk"  = "Admins"
-  "Manu.macron"  = "Admins"
 }
 
 # 🔹 Permissions IAM en `staging` (similaire à `prod`, mais avec restrictions)
