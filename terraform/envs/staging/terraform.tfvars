@@ -7,8 +7,8 @@ group_names = {
 
 # 🔹 Utilisateurs IAM et leurs groupes associés en `staging`
 users = {
-  "devops" = "DevOps"
-  "admin"  = "Admins"
+  "Bob.Dylan" = "DevOps"
+  "Elon.Musk"  = "Admins"
 }
 
 # 🔹 Permissions IAM en `staging` (similaire à `prod`, mais avec restrictions)
